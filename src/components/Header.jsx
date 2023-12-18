@@ -1,13 +1,14 @@
+import Form from './Form';
+
 function Header() {
 	return (
 		<header>
-			<h1 className='logo'>
-				PING<span>.</span>
-			</h1>
+			<img className='logo' src='/images/logo.svg' alt='Logo' />
 			<p className='description'>
 				We are launching <span>soon!</span>
 			</p>
 			<p className='subscribe-msg'>Subscribe and get notified</p>
+			<Form />
 		</header>
 	);
 }

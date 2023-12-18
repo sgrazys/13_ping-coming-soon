@@ -33,20 +33,12 @@ body {
 
 header {
 	text-align: center;
-	padding: 8.1rem 3.6rem 3.2rem;
+	padding: 6.75em 3em 6em;
 }
 
-.logo,
-.logo > span {
-	font-size: 2rem;
-	font-weight: 700;
-}
 .logo {
-	color: var(--color-dark);
 	margin-bottom: 1.6em;
-}
-.logo > span {
-	color: var(--color-primary);
+	width: 5.6rem;
 }
 
 .description {
@@ -66,6 +58,7 @@ header {
 .subscribe-msg {
 	font-weight: 400;
 	color: var(--color-dark);
+	margin-bottom: 3.6rem;
 }
 
 /* FORM */
@@ -75,8 +68,6 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 0 3.6rem 0;
-	width: 100%;
 }
 
 form {
@@ -121,4 +112,38 @@ form {
 	font-size: 1rem;
 	letter-spacing: 0.13px;
 	margin-bottom: 2em;
+}
+
+.img-dashboard {
+	width: 100%;
+	padding: 0 2.3333em 10em;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 7rem;
+	margin-bottom: 2.8461em;
+}
+
+.icons {
+	display: flex;
+	gap: 0.9758em;
+}
+
+.icon {
+	color: var(--color-primary);
+	padding: 0.6rem;
+	border: solid 1px var(--color-secondary);
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+}
+
+.copy {
+	font-size: 1rem;
+	font-weight: 300;
+	color: var(--color-light);
 }
