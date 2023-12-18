@@ -1,2 +1,74 @@
+:root {
+	/* COLORS */
+	/* Primary */
+	--color-primary: #4f7df3;
 
+	/* Secondary */
+	--color-secondary: #c2d3ff;
+	--color-secondary-red: #ff5263;
 
+	/* Neutral */
+	--color-light: #969696;
+	--color-dark: #151f29;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+body,
+body *,
+body *::after,
+body *::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: #f2f2f2;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+header {
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+
+	padding: 8.1rem 3.6rem 3.2rem;
+}
+
+.logo,
+.logo > span {
+	font-size: 2rem;
+	font-weight: 700;
+}
+.logo {
+	color: var(--color-dark);
+	margin-bottom: 1.6em;
+}
+.logo > span {
+	color: var(--color-primary);
+}
+
+.description {
+	font-size: 2.2rem;
+	font-weight: 300;
+	line-height: 1.45;
+	color: var(--color-light);
+	margin-bottom: 0.6818em;
+}
+.description > span {
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 1.45;
+	color: var(--color-dark);
+}
+
+.subscribe-msg {
+	font-weight: 400;
+	color: var(--color-dark);
+	margin-bottom: 2.66em;
+}
