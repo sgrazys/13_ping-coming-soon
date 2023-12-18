@@ -27,16 +27,12 @@ body *::before {
 
 body {
 	font-family: 'Libre Franklin', sans-serif;
-	background-color: #f2f2f2;
+
 	font-size: 1.2rem;
-	font-weight: 600;
 }
 
 header {
 	text-align: center;
-	justify-content: center;
-	width: 100%;
-
 	padding: 8.1rem 3.6rem 3.2rem;
 }
 
@@ -70,5 +66,59 @@ header {
 .subscribe-msg {
 	font-weight: 400;
 	color: var(--color-dark);
-	margin-bottom: 2.66em;
+}
+
+/* FORM */
+
+.container.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 3.6rem 0;
+	width: 100%;
+}
+
+form {
+	width: 100%;
+	max-width: 63.7rem;
+	text-align: center;
+}
+
+.input-email,
+.btn {
+	font-family: inherit;
+	width: 100%;
+	max-width: 42.1rem;
+	height: 4rem;
+	border-radius: 2.33em;
+}
+
+.input-email {
+	font-size: inherit;
+	border: solid 1px var(--color-secondary);
+	padding-left: 2.66em;
+
+	margin-bottom: 0.833em;
+}
+
+#email::placeholder {
+	color: var(--color-secondary);
+}
+
+.btn {
+	color: #fff;
+	font-weight: 600;
+	background-color: var(--color-primary);
+	border: none;
+	cursor: pointer;
+	box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+}
+
+.err-msg {
+	color: #ff5263;
+	line-height: 2;
+	font-size: 1rem;
+	letter-spacing: 0.13px;
+	margin-bottom: 2em;
 }
