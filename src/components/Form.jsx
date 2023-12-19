@@ -44,21 +44,23 @@ function Form() {
 	return (
 		<div className='container form'>
 			<form onSubmit={(e) => e.preventDefault()}>
-				<input
-					onChange={(e) => setEmail(e.target.value)}
-					className='input-email'
-					type='text'
-					name='email'
-					placeholder='Your email adress...'
-					id='email'
-					value={email}
-				/>
-				{!isValidEmail ? (
-					<p className='err-msg'>
-						<em>{errMsg}</em>
-					</p>
-				) : null}
+				<div className='input'>
+					<input
+						onChange={(e) => setEmail(e.target.value)}
+						className='input-email'
+						type='text'
+						name='email'
+						placeholder='Your email adress...'
+						id='email'
+						value={email}
+					/>
 
+					{!isValidEmail ? (
+						<p className='err-msg'>
+							<em>{errMsg}</em>
+						</p>
+					) : null}
+				</div>
 				<button
 					onClick={handleSubmit}
 					className='btn'>
