@@ -7,7 +7,11 @@ function App() {
 			<Header />
 
 			<div className='container img'>
-				<img className='img-dashboard' src='/images/illustration-dashboard.png' alt='' />
+				<img
+					className='img-dashboard'
+					src='/images/illustration-dashboard.png'
+					alt=''
+				/>
 			</div>
 
 			<Footer />
