@@ -104,6 +104,12 @@ form {
 	border: none;
 	cursor: pointer;
 	box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	background-color: rgb(79, 125, 243, 0.75);
+	box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .err-msg {
@@ -140,6 +146,12 @@ footer {
 	height: 32px;
 	width: 32px;
 	border-radius: 50%;
+	transition: all 0.3s;
+}
+.icon:hover {
+	color: #fff;
+	background-color: var(--color-primary);
+	border: solid 1px var(--color-primary);
 }
 
 .copy {
